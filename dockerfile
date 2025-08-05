@@ -55,7 +55,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 USER nextjs
 ARG APP_PORT
 
-EXPOSE APP_PORT
+EXPOSE ${APP_PORT}
 
 ENV PORT=${APP_PORT}
 
