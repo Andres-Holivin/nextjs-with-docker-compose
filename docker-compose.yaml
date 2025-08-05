@@ -7,6 +7,8 @@ services:
       args:
         ENV_VARIABLE: ${ENV_VARIABLE:-}
         NEXT_PUBLIC_ENV_VARIABLE: ${NEXT_PUBLIC_ENV_VARIABLE:-}
+        APP_PORT: ${APP_PORT}
+        APP_HOST: ${APP_HOST}
     restart: always
     ports:
       - "3001:3001"
