@@ -57,10 +57,10 @@ ARG APP_PORT
 
 EXPOSE APP_PORT
 
-ENV PORT=APP_PORT
+ENV PORT=${APP_PORT}
 
 # server.js is created by next build from the standalone output
 # https://nextjs.org/docs/pages/api-reference/config/next-config-js/output
 ARG APP_HOST
-ENV HOSTNAME=APP_HOST
+ENV HOSTNAME=${APP_HOST}
 CMD ["node", "server.js"]
